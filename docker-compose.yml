@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  cache-node:
+    build:
+      context: ./
+    container_name: cache-node
+    tty: true
+    entrypoint: sh ./.docker/entrypoint.sh
+    ports:
+      - 3010:3010
+    volumes:
+      - ./:/usr/cache-node/app
+    networks:
+      - cache-node
+
+networks:
+  cache-node:
+    driver: bridge
