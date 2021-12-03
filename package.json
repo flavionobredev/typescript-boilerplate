@@ -1,8 +1,8 @@
 {
-  "name": "cache-nodejs",
+  "name": "app-repo",
   "version": "1.0.0",
-  "description": "Implementação de cache utilizando Clean Architeture e TDD",
-  "main": "index.js",
+  "description": "Repósitorio template para projetos typescript",
+  "main": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flavionobre11/cache-nodejs.git"
@@ -16,7 +16,8 @@
   "homepage": "https://github.com/flavionobre11/cache-nodejs#readme",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "node dist/server.js",
+    "start": "node dist/main.js",
+    "env": "rm -f .env && cp .env.example .env",
     "start:dev": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn --transpile-only --clear --ignore-watch node_modules --no-notify src/main.ts",
     "test": "jest"
   },
@@ -42,7 +43,7 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "ts-jest": "^26.1.0",
-    "ts-node-dev": "^1.0.0-pre.49",
+    "ts-node-dev": "^1.1.8",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.5"
   },
