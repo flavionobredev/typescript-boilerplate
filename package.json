@@ -1,19 +1,19 @@
 {
-  "name": "app-repo",
+  "name": "typescript-express-boilerplate",
   "version": "1.0.0",
-  "description": "Repósitorio template para projetos typescript",
+  "description": "Repósitorio template para projetos typescript com express",
   "main": "src/main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flavionobre11/cache-nodejs.git"
+    "url": "git+https://github.com/flavionobre11/typescript-boilderplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/flavionobre11/cache-nodejs/issues"
+    "url": "https://github.com/flavionobre11/typescript-boilderplate/issues"
   },
-  "homepage": "https://github.com/flavionobre11/cache-nodejs#readme",
+  "homepage": "https://github.com/flavionobre11/typescript-boilderplate#readme",
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "start": "node dist/main.js",
