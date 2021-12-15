@@ -1,11 +1,10 @@
 {
   "extends": "./tsconfig.json",
+  "target": "ES2019",                          
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build",
+    "outDir": "./dist",                        
+    "rootDir": "./src",                       
     "removeComments": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "exclude": ["tests"]
 }

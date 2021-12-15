@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es6",                          
-    "module": "commonjs",                     
-    "lib": ["es6"],                             
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es2019",
+    "rootDirs": ["src", "tests"],
+    "baseUrl": "src",
+    "paths": {
+      "@/tests/*": ["../tests/*"],
+      "@/*": ["*"]
+    },
     "allowJs": true,                       
     "typeRoots": [
-      "./node_modules/@types",
-      "./src/@types"
+      "../node_modules/@types",
+      "./@types"
     ],       
     "strict": true,
     "sourceMap": true,                
@@ -15,13 +21,9 @@
     "experimentalDecorators": true,        
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,                     
-    "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "@controllers/*": ["./src/controllers/*"],
-    }
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
-    "src/**/*"
+    "src", "tests"
   ]
 }
