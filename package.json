@@ -1,14 +1,14 @@
 {
-  "name": "typescript-express-boilerplate",
+  "name": "typescript-clean-boilerplate",
   "version": "1.0.0",
-  "description": "Repósitorio template para projetos typescript com express",
+  "description": "Repósitorio template para projetos NodeJs utilizando Typescript, TDD e Clean Architecture",
   "main": "src/config/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flavionobre11/typescript-boilderplate.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Template", "Boilerplate", "Clean Architecture", "Typescript"],
+  "author": "Fláio Nobre",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/flavionobre11/typescript-boilderplate/issues"
@@ -45,5 +45,8 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "rimraf": "^3.0.2"
+  },
+  "_moduleAliases": {
+    "@": "dist"
   }
 }
