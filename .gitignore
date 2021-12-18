@@ -1,7 +1,11 @@
+# node modules
 node_modules
+
+# build folder
 dist
 
+# enviroments
 .env
 
+# others
 .vscode
-.husky
