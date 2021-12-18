@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/flavionobre11/typescript-boilderplate#readme",
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "lint": "eslint . --ext .ts,.tsx,.js --fix",
     "prebuild": "npm run lint && rimraf dist",
     "build": "tsc --build ./tsconfig.release.json",
