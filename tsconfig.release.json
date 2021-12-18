@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "target": "ES2019",                          
+  "target": "ES6",                          
   "compilerOptions": {
     "outDir": "./dist",                        
     "rootDir": "./src",                       
