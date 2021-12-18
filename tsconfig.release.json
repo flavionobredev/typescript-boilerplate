@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "target": "ES2019",                          
+  "compilerOptions": {
+    "outDir": "./dist",                        
+    "rootDir": "./src",                       
+    "removeComments": true
+  },
+  "exclude": ["tests"]
+}

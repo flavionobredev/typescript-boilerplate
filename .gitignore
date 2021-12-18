@@ -1,0 +1,14 @@
+# node modules
+node_modules
+
+# build folder
+dist
+
+# enviroments
+.env
+
+# npm
+package-lock.json
+
+# others
+.vscode

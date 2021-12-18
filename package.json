@@ -1,0 +1,65 @@
+{
+  "name": "typescript-clean-boilerplate",
+  "version": "1.0.0",
+  "description": "Repósitorio template para projetos NodeJs utilizando Typescript, TDD e Clean Architecture",
+  "main": "src/config/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavionobre11/typescript-boilderplate.git"
+  },
+  "keywords": [
+    "Template",
+    "Boilerplate",
+    "Clean Architecture",
+    "Typescript"
+  ],
+  "author": "Fláio Nobre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavionobre11/typescript-boilderplate/issues"
+  },
+  "homepage": "https://github.com/flavionobre11/typescript-boilderplate#readme",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "lint": "eslint . --ext .ts,.tsx,.js --fix",
+    "prebuild": "npm run lint && rimraf dist",
+    "build": "tsc --build ./tsconfig.release.json",
+    "start": "node -r dotenv/config dist/main/server.js",
+    "env": "rm -f .env && cp .env.example .env",
+    "start:dev": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn --transpile-only --clear --ignore-watch node_modules --no-notify src/main/server.ts",
+    "test": "jest",
+    "prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/*",
+    "precommit": "npm run lint && npm run format",
+    "prepush": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0    ",
+    "eslint": "^7.3.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^27.3.1",
+    "supertest": "^6.1.3",
+    "prettier": "^2.0.5",
+    "ts-jest": "^27.0.7",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.4.4",
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "rimraf": "^3.0.2"
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  }
+}

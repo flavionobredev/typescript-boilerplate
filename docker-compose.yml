@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  app-repo:
+    build:
+      context: ./
+    container_name: app-repo
+    tty: true
+    entrypoint: sh ./.docker/entrypoint.sh
+    ports:
+      - 3010:3010
+    volumes:
+      - ./:/usr/app-repo/app
+    networks:
+      - app-repo
+
+networks:
+  app-repo:
+    driver: bridge
