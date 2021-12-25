@@ -11,8 +11,8 @@
     },
     "allowJs": true,                       
     "typeRoots": [
-      "../node_modules/@types",
-      "./@types"
+      "node_modules/@types",
+      "src/@types"
     ],       
     "strict": true,
     "sourceMap": true,                
