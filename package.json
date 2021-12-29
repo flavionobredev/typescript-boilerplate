@@ -28,6 +28,7 @@
     "env": "rm -f .env && cp .env.example .env",
     "start:dev": "ts-node-dev -r tsconfig-paths/register -r dotenv/config --respawn --transpile-only --clear --ignore-watch node_modules --no-notify src/main/server.ts",
     "test": "jest",
+    "test:e2e": "jest --config ./tests/e2e/jest-e2e.json",
     "prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/*",
     "precommit": "npm run lint && npm run format",
     "prepush": "npm run lint"
