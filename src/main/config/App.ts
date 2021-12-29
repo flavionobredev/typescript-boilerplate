@@ -1,14 +1,14 @@
-import express, { Express } from 'express'
+import express, { Express } from 'express';
 
 export class App {
   private app: Express;
 
-  constructor () {
-    this.app = express()
+  constructor() {
+    this.app = express();
   }
 
-  initialiaze () {
+  initialiaze() {
     // load routes, middlewares, etc
-    return this.app
+    return this.app;
   }
 }
