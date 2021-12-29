@@ -1,9 +1,7 @@
 # typescript-boilerplate
 
-
 ![Typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label=4.4.4)&nbsp;
 ![NodeJs](https://img.shields.io/node/v/typescript?label=nodejs&logo=node.js)
-
 
 🔥 Pronto para desenvolver! Esse template foi criado para servir como base para qualquer projeto NodeJS.
 
@@ -46,7 +44,6 @@ docker-compose up # ou npm install
 <br>
 <br>
 
-
 ## NPM scripts
 
 - `format` - formata o código fonte em `src` e `tests` utilizando prettier
@@ -57,12 +54,12 @@ docker-compose up # ou npm install
 - `env` - carrega envs
 - `start:dev` - inicia a aplicação em modo desenvolvimento
 - `test` - inicia testes
+- `test:e2e` - inicia testes end to end
 - `prepare` - inicializa o husky para usar `precommit` e `prepush`
 - `precommit` - roda o `lint` e o `format`
 - `prepush` - roda o `lint`
 
 Nota: todos os scripts de inicialização já carregam a dependência dotenv.
-
 
 [nodejs]: https://nodejs.org/dist/latest-v14.x/docs/api/
 [typescript]: https://www.typescriptlang.org/
