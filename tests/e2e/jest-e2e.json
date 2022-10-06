@@ -4,7 +4,6 @@
     "@/tests/(.*)": "<rootDir>/tests/$1",
     "@/(.*)": "<rootDir>/src/$1"
   },
-  "setupFiles": ["dotenv/config"],
   "clearMocks": true,
   "moduleFileExtensions": ["js", "json", "ts"],
   "rootDir": "../../",

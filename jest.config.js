@@ -1,7 +1,6 @@
 module.exports = {
   preset: 'ts-jest',
   clearMocks: true,
-  setupFiles: ['dotenv/config'],
   testEnvironment: "node",
   testMatch: ["**/tests/**/*.(test|spec).ts"],
   testPathIgnorePatterns: [
